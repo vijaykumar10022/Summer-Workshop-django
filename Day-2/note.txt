@@ -1,0 +1,32 @@
+
+
+Good Afternoon to all
+
+
+
+Agenda for today:
+
+-->construcors in oops
+		Constructor are generally used for inistating an object 
+		to the data members of the class when an object of class is created
+		
+		class classname:
+			def __init__(selft):
+				dody --->collection of statements 
+					variables
+-->inheritance:
+		inherit the properties from another class (parent)
+		syntax:
+		class Classname(parent or Superclass):
+				# body 
+				
+-->modeules
+			Module is Folder -->no of files like pyfile
+				
+-->packages
+			pyfile -->no of methods,funtions,classes
+
+
+
+
+

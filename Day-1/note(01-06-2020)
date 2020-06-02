@@ -1,0 +1,77 @@
+
+2hr /day
+
+36 hr 
+
+
+total days -->18 days
+
+
+
+
+
+
+
+Today objective:
+------ ------
+
+-->introdution django
+-->environt setup
+-->opps in python
+		-->class
+				class is colletion of objects and methods
+				syntax:
+					class classname:
+						variables
+						methods
+						
+				method:function with in the class
+				funtion :class out side 
+						
+		--->object:
+				it is a instance of a class
+				syntax:
+				objectname =classname
+				java :
+					object class name =new classname()
+		--->constutors
+		--->inheritance
+		
+
+
+
+python:
+django:
+	framework -->dynamic webpages,
+	flask
+	bootle
+
+java
+ --->spring
+ 
+
+
+web designing &web development
+
+Html,css,js   handle with data
+  fontend   fontend+backend 
+
+
+
+
+
+
+
+
+Environment setup:
+	
+python -->3.6 
+django--->3.7
+editor:sublime,Atom 
+
+
+command:win+r
+
+
+
+
