@@ -1,0 +1,57 @@
+For agenda:
+
+-->django installation
+		-->pip install django
+		-->open commandprompt (win+R)
+		-->
+		   current version:django-admin --version
+							python -m django --version
+
+
+--->project creation
+			-->step:1 open present working directary
+			-->step:2 open command promt that location
+			-->step:3 type command :
+						django-admin startproject projectname
+						ex:
+						django-admin startproject mydemo
+			-->Step:4 app creation
+					-->one step forward(move project location)
+						 python manage.py startapp appname
+						ex:
+						python manage.py startapp myapp1
+						
+		  --->step:5 add app in to admin part
+						settings.py -->installed app -->last add your app 
+		  --->step:6 run our application
+						python manage.py runserver
+						
+						you get a server ip
+						
+						to stop server key : ctrl+c
+						
+		 --->step:7 open browser
+						-->http://127.0.0.1:8000/
+						         or
+						--->localhost:8000
+						
+						
+	Each Frame Work fallow 
+	some strucure i.e
+			other frameworks:
+			MVC-->model View Control
+				model -->to handle database connectivity
+				view -->templates
+				control -->bussiness logic
+			Django framework:
+			MVT -->Model view Template
+			Model -->to handle db connectivity
+			view --->Business logic
+			template-->templates(userinterface)
+
+
+
+						
+					
+
+			-->url mapping
