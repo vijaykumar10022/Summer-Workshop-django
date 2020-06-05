@@ -51,6 +51,23 @@ For agenda:
 
 
 
+File description:
+Apllication files:
+__init__: this is py file it consider as python file
+
+admin:it can register each and every database information for admin part
+app.py it can register our app information
+models.py: database creation (STudent info(roll,name,address,ph,email) 
+test.py :this is py file it consider as python file
+
+views.py:it is py file here we going to do business logic
+ 
+ admin part:
+ __init__
+ asgi.py
+ settings.py:
+
+
 						
 					
 

@@ -1,0 +1,21 @@
+Agenda:
+
+	-->static files Accessing
+			-->images
+			--->js(javascript)
+					-->internal Accessing -->in head or out of the html tag
+					--->External Accesing
+			-->CSS
+				-->inline -->with in the tag
+				-->internal -->with in file in head tag
+				--->external -->outside folder
+				
+	-->Create onefolder in our app 
+			app name is Static
+							-->images-->add images -->.jpg,.jpeg,.png
+							
+		-->int setting.py directory is added or not 
+					STATIC_URL = '/static/'
+		-->load static folder in template
+				{% load static %}
+	-->Data Rendering from Templates to views and views to tamplates

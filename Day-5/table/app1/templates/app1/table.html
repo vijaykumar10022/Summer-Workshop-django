@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Table::</title>
+	<script src="{% static 'js/myscript.js' %}"></script>
+	<style type="text/css">
+		body{
+			background-color:red;
+
+		}
+		h1{
+			
+			font-size: 30px;
+		}
+
+		#mytag1{
+			background-color: black;
+			color: white;
+		}
+		.mytag2{
+			background-color: green;
+			font-size: 50px;
+			
+		}
+	</style>
+	
+</head>
+<body>
+	<p>Hello APSSDC</p>
+	<h3>Hello APSSDC</h3>
+	<!-- <img src="https://image.shutterstock.com/image-vector/vector-illustration-icon-python-programming-260nw-1397241389.jpg" >
+	<img src="{% static 'images/billgates2.jpg' %}" alt="billgates">
+	<img src="{% static 'images/billgates.jpg' %}"> -->
+<h1 class="mytag2">Hello This Is Django-Workshop</h1>
+<h1 id='mytag1'>This is h1 tag</h1>
+{% for i in info%}
+	<h2>{{i}}</h2>
+{% endfor%}
+
+</body>
+</html>
+<!-- <script type="text/javascript">
+	// alert("table is {{table}}")
+	document.getElementById("mysc").innerHTML ="{{table}}";
+</script>
+ctrl+/ -->
