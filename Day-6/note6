@@ -1,0 +1,38 @@
+
+Today Agenda:
+
+	-->static file accessing
+			-->js
+			-->css
+				-->Bootstrap-->for butification
+					-->internal 
+					--->external
+					
+				.js,css ect..
+					
+	-->Data Rendering from Templates to views and views to tamplates
+
+
+
+
+first value:2
+second value:10
+
+Result=12
+
+
+Task:
+user interface:
+
+team1:Textbox-->4,3
+		button
+team2:Textbox-->3,6
+		button
+button -->Validate
+Team-1:7
+Team-2:9
+
+Result:who won the match
+
+	
+
