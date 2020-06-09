@@ -1,5 +1,5 @@
 
-	// alert(" hello Django");
+	alert(" hello Django");
 	// document.getElementById("mysc").innerHTML ="Hello Django";
 
 // var person = new Object();
@@ -9,10 +9,9 @@
 // person.eyeColor = "blue"; 
 
 // document.getElementById("mysc").innerHTML = person.firstName + " is " + person.age + " years old.";
-
-function Addition() {
-			var First_num=document.getElementById('fn').value;
-			var Second_num=document.getElementById('sn').value;
-			document.getElementById('result').innerText=parseInt(First_num)+parseInt(Second_num);
+var temp1=0
+function team1() {
+			var First_num=document.getElementById('fn1').value;
+			document.getElementById('result1').innerText=parseInt(First_num)+temp1;
 			// body...
 	}

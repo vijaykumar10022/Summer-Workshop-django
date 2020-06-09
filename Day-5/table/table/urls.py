@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app1 import views as v1
+from task import views as v2
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('table/<int:num>/',v1.table),
     path('add/',v1.add),
+    path('task/',v2.task),
 
 ]
