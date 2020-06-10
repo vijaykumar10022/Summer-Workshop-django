@@ -1,0 +1,17 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Display-page::</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+	<div class="jumbotron">
+			<h1>Name:{{data.name}}</h1>
+			<h2>mailid:{{data.mailid}}</h2>
+			<h2>pnno:{{data.pnno}}</h2>
+			<h2>roll:{{data.roll}}</h2>
+			<h2>address:{{data.address}}</h2>
+	</div>
+</body>
+</html>
