@@ -1,0 +1,7 @@
+Today Objectives
+-----------------
+-->implementing curd operations using basic procedure
+	1.adding a new record
+	2.fetching all records
+	3.Update the existing record
+	4.Delete the existing record
