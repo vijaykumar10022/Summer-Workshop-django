@@ -22,5 +22,7 @@ urlpatterns = [
     path('table/<int:num>/',v1.table),
     path('add/',v1.add),
     path('task/',v2.task),
+    path('task2/',v2.task2),
+    path('task3/',v2.task3),
 
 ]

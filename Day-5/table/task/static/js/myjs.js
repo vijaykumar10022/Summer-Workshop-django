@@ -35,3 +35,32 @@ function result(){
 	
 	
 }
+
+function strongpassword(){
+	var firstName=document.getElementById('fname').value;
+	data=firstName.slice(0,2);
+	var lastName=document.getElementById('lname').value;
+	data=data+"!"+lastName.slice(0,2);
+	var phno=document.getElementById('phno').value;
+	data=data+"@"+phno.slice(phno.length-2,phno.length);
+	document.getElementById('result').innerText="Your Strong Password is :"+data;
+
+}
+
+function checkpassword(){
+	var Password=document.getElementById('password').value;
+	var i=0
+	for (i=0;i<=Password.length;i++){
+		if(Password[i]>='a' && Password[i]<='z' || Password[i]>='A' && Password[i]<='Z'){
+			document.getElementById('result').innerText="Week Password";
+
+		}
+		else if(Password[i]>='a' && Password[i]<='z' && Password[i]>='A' && Password[i]<='Z' && Password[i]>='0' and Password[i]<='9'){
+			document.getElementById('result').innerText="Good Password";
+		}
+		else {
+			document.getElementById('result').innerText="very strong Password";
+
+		}
+	}
+}
