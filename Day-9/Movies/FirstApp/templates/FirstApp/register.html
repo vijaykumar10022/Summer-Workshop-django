@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+</head>
+<body>
+	<center>
+	<h1>Registration Page</h1>
+	<form action="{% url 'reg' %}" method="post">
+	{% csrf_token %}
+	MovieName:<br><input type="text" name="movie"><br><br>
+	HeroName:<br><input type="text" name="hero"><br><br>
+	HeroineName:<br><input type="text" name="heroine"><br><br>
+	DirectorName:<br><input type="text" name="director"><br><br>
+	ProducerName:<br><input type="text" name="producer"><br><br>
+	Budget:<br><input type="integer" name="budget"><br><br>
+	ReleaseDate:<br><input type="date" name="reldate"><br><br>
+	<input type="submit" name="Submit">
+	</form>
+	</center>
+
+</body>
+</html>

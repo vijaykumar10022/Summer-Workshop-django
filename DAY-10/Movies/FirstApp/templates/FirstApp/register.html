@@ -1,0 +1,73 @@
+{% extends 'FirstApp/base.html'%}
+
+{% block title%}Register{% endblock title%}
+
+{% block content %}
+
+<div class="containerfluid col-sm-6 offset-sm-3 pt-2 card card-body">
+	<div class=" bordered rounded " style="color: skyblue;">
+		<form action="{% url 'reg' %}" method="POST"class="m-5">
+			{% csrf_token %}
+			<div class="form-group"> 
+				<label for="MovieName">MovieName</label>
+				<input type="text" name="movie" class="form-control" placeholder="Enter the MovieName" id="MovieName" required>
+			</div>
+
+			<div class="form-group"> 
+				<label for="HeroName">HeroName</label>
+				<input type="text" name="hero" class="form-control" placeholder="Enter the HeroName" id="HeroName" required>
+			</div>
+
+
+			<div class="form-group"> 
+				<label for="HeroineName">HeroineName</label>
+				<input type="text" name="heroine" class="form-control" placeholder="Enter the HeroineName" id="HeroineName" required>
+			</div>
+
+
+			<div class="form-group"> 
+				<label for="DirectorName">DirectorName</label>
+				<input type="text" name="director" class="form-control" placeholder="Enter the DirectorName" id="DirectorName" required>
+			</div>
+
+
+			<div class="form-group"> 
+				<label for="ProducerName">ProducerName</label>
+				<input type="text" name="producer" placeholder="Enter theProducerName"  class="form-control"id="ProducerName" required>
+			</div>
+
+			<div class="form-group"> 
+				<label for="Budget">Budget</label>
+				<input type="text" name="budget" class="form-control" placeholder="Enter the Budget" id="Budget" required>
+			</div>
+
+			<div class="form-group"> 
+				<label for="ReleaseDate">ReleaseDate</label>
+				<input type="date" name="reldate" class="form-control"  id="ReleaseDate" required>
+			</div>
+
+			<div class="text-center">
+				<input type="submit" value="Register" class="btn btn-primary btn-lg">
+			</div>
+		</form>
+		
+	</div>
+	
+</div>
+
+{%endblock content%}
+
+
+	
+
+
+
+	<!-- MovieName:<br><input type="text" name="movie"><br><br>
+	HeroName:<br><input type="text" name="hero"><br><br>
+	HeroineName:<br><input type="text" name="heroine"><br><br>
+	DirectorName:<br><input type="text" name="director"><br><br>
+	ProducerName:<br><input type="text" name="producer"><br><br>
+	Budget:<br><input type="integer" name="budget"><br><br>
+	ReleaseDate:<br><input type="date" name="reldate"><br><br>
+	<input type="submit" name="Submit"> -->
+	

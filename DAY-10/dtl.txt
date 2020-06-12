@@ -1,0 +1,21 @@
+DTL->Django Template Language
+
+{% extends 'base.html'%}
+
+{% block title%}Register{% endblock title%}
+
+{% block content %}
+
+{% endblock %}
+
+{% for temp in i %}
+
+{% endfor%}
+
+{% if condition %}
+
+{% elif  %}
+{% else %}
+
+
+

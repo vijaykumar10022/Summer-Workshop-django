@@ -1,0 +1,57 @@
+{% extends 'FirstApp/base.html'%}
+
+{%block title%}ShowData{% endblock title%}
+
+{% block content%}
+
+<div class="container-fluid pt-3">
+	<table class="table-bordered table-hover table-primary" style="border-color: red;margin-top: 70px; margin-left: 30%">
+		<thead>
+			<tr class="bg-info">
+				<th>S.No</th>
+				<th>MovieName</th>
+				<th>HeroName</th>
+				<th>Heroine</th>
+				<th>Diretor</th>
+				<th>Producer</th>
+				<th>Budget</th>
+				<th>ReleaseDate</th>
+				<th colspan="2">Options</th>
+			</tr>
+			<tbody>
+				{% for i in data %}
+				<tr>
+					<td>{{forloop.counter}}</td>
+					<td>{{i.moviename}}</td>
+					<td>{{i.hero}}</td>
+					<td>{{i.heroine}}</td>
+					<td>{{i.director}}</td>
+					<td>{{i.producer}}</td>
+					<td>{{i.budget}}</td>
+					<td>{{i.reldate}}</td>
+					<td>
+						<a href="#" class="btn btn-sm">
+							<i class="fas fa-edit" style="font-size: 25px;color: green">
+								
+							</i>
+							</a>
+						</td>
+						<td>
+						<a href="{% url 'moviedelete' i.id %}" class="btn btn-sm">
+							<i class="fas fa-trash" style="font-size: 25px;color: red">
+								
+							</i>
+						</a>
+					</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</thead>
+	</table>
+
+	
+</div>
+
+{% endblock content%}
+
+
