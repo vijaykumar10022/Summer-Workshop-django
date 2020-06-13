@@ -1,0 +1,35 @@
+GoodAfternoon All
+===============
+CURD Operations Using ModelForms
+
+What is Django Model Form 
+
+It is a class which is used to create an HTML form by using the Model. 
+It is an efficient way to create a form without writing HTML code. 
+Django automatically does it for us to reduce the application development time.
+
+GoodAfternoon All
+==============
+ToDay Agenda
+============
+image uploadingwith confugarations
+
+we need to store and retrieve media files in our project. 
+so we definitely configure that media,. let’s configure that media in settings.py file.
+
+we must configure those static files and media files in urls.py because those are rendering through URLs. copy the below code and paste in urls.py file in the Django project folder.
+
+create movie
+
+
+reteive movie
+
+
+
+
+
+
+
+<video  loop class="embed-responsive-item thumbnails" controls>
+<source src="/images/{{views.trailer}}" type="video/mp4">
+</video>

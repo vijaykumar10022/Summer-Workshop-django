@@ -1,0 +1,54 @@
+{% extends 'Movies/base.html'%}
+
+{% block title%}ShowMovies{% endblock title%}
+
+{% block content%}
+
+<div class="container pt-2">
+	<table class="table table-bordered table-hover text-primary">
+		<thead>
+			<tr>
+				<th>S.no</th>
+				<th>TitleName</th>
+				<th>Poster</th>
+				<th>ActorName</th>
+				<th>ActressName</th>
+				<th>Director</th>
+				<th>Trailer</th>
+				<th colspan="2">Operation</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for movie in movies %}
+			<tr>
+				<td>{{forloop.counter}}</td>
+				<td>{{movie.title_name}}</td>
+				<td><img src="{{movie.poster.url}}" style="height: 150px;"></td>
+				<td>{{movie.actor_name}}</td>
+				<td>{{movie.actress_name}}</td>
+				<td>{{movie.director}}</td>
+				<td><video loop class="embed-responsive-item thumbnails" controls>
+					<source src="{{movie.trailer.url}}" type="video/mp4" style="height: 150px;width: 100px;">
+					</video></td>
+				<td>
+					<a href="#">
+						<i class="fas fa-edit" style="font-size: 25px; color: green"></i>
+					</a>
+				</td>
+				<td>
+					<a href="#">
+						<i class="fas fa-trash" style="font-size: 25px; color: red"></i>
+					</a>
+				</td>
+			</tr>
+		</tbody>
+		{% endfor %}
+	</table>
+</div>
+
+
+
+
+
+
+{% endblock content %}
