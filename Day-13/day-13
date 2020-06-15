@@ -1,0 +1,10 @@
+today agenda:
+	-->insert,display,delete,update/
+	-->Mysql connections using XAMPP Server
+	
+		
+form accessing:
+	3 ways
+	-->table -->form.as_table
+	-->paragraph -->form.as_p
+	-->unorderlist -->form.as_ul	

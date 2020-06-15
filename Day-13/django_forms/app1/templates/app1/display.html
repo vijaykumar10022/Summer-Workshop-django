@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::display page::</title>
+</head>
+<body>
+	<div align="center">
+	<a href="{% url 'add_data' %}"> <b>Add Student Data</b></a>
+	<table border="2px">
+		<thead>
+			<tr>
+				<td>ID</td>
+				<td>Name</td>
+				<td>Roll</td>
+				<td>Phno</td>
+				<td>Trash/Delete</td>
+				<td>Edit/Update</td>
+			</tr>
+		</thead>
+		<tbody>
+			{% for student in mydata %}
+				<tr>
+					<td>{{student.id}}</td>
+					<td>{{student.name}}</td>
+					<td>{{student.roll}}</td>
+					<td>{{student.phno}}</td>
+					<td><a href="{% url 'trash' student.id %}">Trash/Delete</a></td>
+					<td><a href="{% url 'update' student.id %}">Update/Edit</a></td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	</div>
+</body>
+</html>

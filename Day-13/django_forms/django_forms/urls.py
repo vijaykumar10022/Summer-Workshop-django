@@ -1,4 +1,4 @@
-"""Tollywood URL Configuration
+"""django_forms URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
@@ -15,22 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
-from Movies import views
-
-from django.conf import settings
-
-from django.conf.urls.static import static
-
+from app1 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home,name="home"),
-    path('addmovie/',views.addmovie,name="addmovie"),
-    path('showmovies/',views.showmovies,name="showmovies"),
-    path('delete/<int:id>/',views.delete,name="delete"),
-    path('update/<str:actor_name>/',views.update,name="update"),
+    path('add_data/',views.add_data,name="add_data"),
+    path('display/',views.display),
+    path('trash/<int:id>',views.trash,name="trash"),
+    path('update/<int:id>/',views.update,name="update"),
 ]
-
-if settings.DEBUG:
-	urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
-

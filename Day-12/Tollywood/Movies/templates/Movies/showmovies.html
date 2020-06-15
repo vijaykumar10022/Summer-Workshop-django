@@ -31,12 +31,12 @@
 					<source src="{{movie.trailer.url}}" type="video/mp4" style="height: 150px;width: 100px;">
 					</video></td>
 				<td>
-					<a href="#">
+					<a href="{% url 'update' movie.actor_name %}">
 						<i class="fas fa-edit" style="font-size: 25px; color: green"></i>
 					</a>
 				</td>
 				<td>
-					<a href="#">
+					<a href="{% url 'delete' movie.id %}">
 						<i class="fas fa-trash" style="font-size: 25px; color: red"></i>
 					</a>
 				</td>
