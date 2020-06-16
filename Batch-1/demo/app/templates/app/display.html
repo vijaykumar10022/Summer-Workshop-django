@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Display page::</title>
+</head>
+<body>
+	<div align="center" style="margin: 250px">
+		<h1>Registred Data</h1>
+		<table border="2px">
+			<thead>
+				<tr>
+					<td>ID</td>
+					<td>Name</td>
+					<td>Age</td>
+					<td>Salary</td>
+					<td>Designation</td>
+				</tr>
+			</thead>
+			<tbody>
+				{% for row in mydata %}
+				<tr>
+					<td>{{row.id}}</td>
+					<td>{{row.name}}</td>
+					<td>{{row.age}}</td>
+					<td>{{row.salary}}</td>
+					<td>{{row.desig}}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+			
+		</table>
+		
+	</div>
+</body>
+</html>

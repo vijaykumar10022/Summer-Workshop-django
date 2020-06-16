@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Register page::</title>
+</head>
+<body>
+	<div align="center" style="margin: 200px">
+		<h1>Register form</h1>
+		<form action="{% url 'register' %}" method="POST">
+			{% csrf_token %}
+			{{form.as_p}}
+			<input type="submit" value="Register">
+		</form>
+	</div>
+</body>
+</html>
