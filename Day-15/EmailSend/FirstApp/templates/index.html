@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index Page</title>
+</head>
+<body>
+	<center>
+		<h3>SignUp Page</h3>
+		<form action="{% url 'index' %}" method="POST">
+			{% csrf_token %}
+			UserName:<br><input type="email" name="email"><br><br>
+			<br><input type="Submit" name="Submit"><br>
+		</form>
+	</center>
+
+</body>
+</html>
