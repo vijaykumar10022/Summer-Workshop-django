@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Qrcode page::</title>
+</head>
+<body>
+	<div align="center" style="margin: 250px">
+		<h1>Scan Qrcode </h1>
+		<form action="{% url 'qrvalidation' %}" method="POST">
+			{% csrf_token %}
+			<img src="{% static 'qrcodeimage/otp.jpg' %}">
+			<br>
+			<input type="text" name="otp" placeholder="Enter Your Scanned OTP"><br>
+			<input type="submit" value="Submit">
+		</form>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::login page::</title>
+</head>
+<body>
+	<div align="center" style="margin: 250px">
+		<h1>Login</h1>
+
+		<form action="{% url 'login' %}" method="POST">
+			{% csrf_token %}
+			<input type="text" name="uname" placeholder="Enter Username"><br>
+			<input type="password" name="psw" placeholder="Enter Password"><br>
+			<input type="submit" value="Login">
+			 
+		</form>
+		
+	</div>
+</body>
+</html>
